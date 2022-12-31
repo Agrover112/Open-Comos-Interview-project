@@ -1,22 +1,13 @@
-from sentinelhub import SHConfig
-import subprocess
 import datetime
 import os
+import subprocess
 
 import matplotlib.pyplot as plt
 import numpy as np
+from sentinelhub import (CRS, BBox, DataCollection, DownloadRequest, MimeType,
+                         MosaickingOrder, SentinelHubDownloadClient,
+                         SentinelHubRequest, SHConfig, bbox_to_dimensions)
 
-from sentinelhub import (
-    CRS,
-    BBox,
-    DataCollection,
-    DownloadRequest,
-    MimeType,
-    MosaickingOrder,
-    SentinelHubDownloadClient,
-    SentinelHubRequest,
-    bbox_to_dimensions,
-)
 from utils import *
 
 config = SHConfig()

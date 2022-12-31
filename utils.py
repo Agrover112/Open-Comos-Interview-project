@@ -1,11 +1,11 @@
 # Description: Utility functions for the project
+import os
 from typing import Any, Optional, Tuple
 
 import matplotlib.pyplot as plt
 import numpy as np
 import PIL
 from PIL import Image
-import os
 
 
 def plot_image(
